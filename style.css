@@ -1,0 +1,63 @@
+body{
+    background-color: #FFCCCC;
+    
+}
+
+p{
+    font-size: 20px;
+}
+
+#logo img {
+  max-width: 120px;
+  border: 5px solid #fff;
+  border-radius: 100%;
+}
+
+div.nav {
+width: 100%; /* ナビゲーションの幅 */
+border-top: 1px #cccccc solid; /* 上境界線 */
+border-bottom: 1px #cccccc solid; /* 下境界線 */
+}
+
+
+div.nav ul.nl {
+background-color:#fff;
+width: 600px; /* メニューの幅 */
+margin: 0 auto; /* センターに配置 */
+padding: 0;
+border-right: 1px #cccccc solid; /* メニューの右境界線 */
+list-style-type: none;
+text-align: center;
+}
+
+/* --- メニュー項目 --- */
+div.nav ul.nl li {
+width: 20%; /* 項目の幅 */
+float: left;
+}
+
+/* --- リンク --- */
+div.nav ul.nl li a {
+display: block;
+position: relative; /* IE6用 */
+padding: 8px 2px; /* リンクエリアのパディング（上下、左右） */
+background: url(hor_menu2_off.gif) repeat-x bottom; /* 下側の水平線 */
+border-left: 1px #cccccc solid; /* リンクエリアの左境界線 */
+text-decoration: none; /* テキストの下線（なし） */
+}
+/* --- ポイント時の設定 --- */
+div.nav ul.nl li a:hover {
+background: url(hor_menu2_on.gif) repeat-x bottom; /* ポイント時の水平線 */
+}
+
+/* --- clearfix --- */
+.clearFix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+}
+.clearFix {
+min-height: 1px;
+}
